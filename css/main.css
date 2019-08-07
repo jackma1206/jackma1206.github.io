@@ -1,0 +1,362 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+a {
+    text-decoration: none;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+.hero-col {
+    width: 33.33333vw;
+    height: 100vh;
+    top: 0;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+}
+
+.hero-col:hover .hero-caption {
+    padding-bottom: 25%;
+}
+.hero-bg {
+    height: 100vh;
+    background-size: auto;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.section {
+    width: 100%;
+}
+
+.hero-title {
+    font-size: 45px;
+    line-height: 1.42;
+    padding: 0 15% 8%;
+    position: relative;
+    z-index: 2;
+    font-weight: 700;
+    color: #fff;
+}
+
+.hero-caption {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-weight: 300;
+    height: auto;
+    padding: 10% 15%;
+    transition: padding-bottom 0.8s cubic-bezier(0.42, 0, 0, 1);
+    display: block;
+}
+
+.hero-sub {
+    margin-bottom: 6 rem;
+    font-size: 30px;
+    line-height: 1.7;
+}
+.hero-link {
+    font-size: 24px;
+    color: white;
+}
+
+.color-wipes-animate {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    left: 0;
+    position: fixed;
+    top: 100%;
+    width: 100%;
+    height: 100vh;
+    z-index: 5;
+}
+
+.color-wipe {
+    height: 100vh;
+    width: 100%;
+    background: #be2829;
+    display: none;
+}
+
+.color-wipe:nth-child(1) {
+    background-color: #011627;
+}
+
+.color-wipe:nth-child(2) {
+    background-color: #ff3366;
+}
+
+.color-wipe:nth-child(3) {
+    background-color: #2ec4b6;
+}
+
+.color-wipe:nth-child(4) {
+    background-color: #17a8a8;
+}
+
+.color-wipe:nth-child(5) {
+    background-color: #20a4f3;
+}
+
+.loader {
+    font-size: 26px;
+    font-weight: 600;
+    color: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    opacity: 0;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 40px;
+    z-index: 4;
+}
+
+nav a {
+    margin: 0 20px 0 0;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.project-title {
+    color: #fff;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    padding: 0;
+    transform: translate(-50%);
+}
+
+.project-title h2 {
+    text-align: center;
+}
+.p-container {
+    background-image: url("../img/fractal-bg.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+.active {
+    border-bottom: 1px solid white;
+}
+
+.h-nav a {
+    color: white;
+    transition: 0.3s;
+}
+.h-nav a:hover {
+    color: orange;
+    border-bottom: 1px solid orange;
+}
+
+.project-wrapper {
+    width: 700px;
+    height: 300px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+}
+
+.project-pic {
+    width: 40%;
+    background-size: cover;
+    background: url("https://images.pexels.com/photos/597331/pexels-photo-597331.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+}
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+}
+
+@media print,
+    (-o-min-device-pixel-ratio: 5/4),
+    (-webkit-min-device-pixel-ratio: 1.25),
+    (min-resolution: 120dpi) {
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
