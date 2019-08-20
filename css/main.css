@@ -387,7 +387,7 @@ nav a:hover {
 }
 .skills {
   font-weight: bold;
-  text-decoration: underline;
+  text-decoration: none;
   margin-bottom: 3px;
 }
 
