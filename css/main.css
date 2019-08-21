@@ -291,6 +291,12 @@ nav a:hover {
 .col-sm-8 {
   padding: 0;
 }
+
+.project-title-md {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+}
 #project-1 {
   background: url("../img/mtabusmap.png") no-repeat center center;
   background-size: 125%;
@@ -561,7 +567,135 @@ form label {
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (max-width: 720px) {
+  .my-container {
+    flex-direction: column;
+  }
+
+  .hero-col {
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 100vw;
+    height: 33.333vh;
+  }
+
+  .hero-caption {
+    padding: 3% 8%;
+  }
+  .hero-title {
+    padding: 0 10% 4%;
+  }
+
+  .hero-col:hover .hero-caption {
+    padding-bottom: 7%;
+    text-decoration: none;
+  }
+
+  .about-container {
+    margin-top: 15%;
+  }
+
+  .contact-container {
+    margin-top: 20%;
+  }
+  #project-body {
+    background: #0c7070;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .about-container {
+    margin-top: 20%;
+  }
+  .contact-container {
+    margin-top: 20%;
+  }
+  .project-title {
+    display: none;
+  }
+
+  .project-title-md {
+    display: block;
+    margin: 10% 0;
+  }
+  .project-title-md h2 {
+    font-size: 4rem;
+  }
+  .project-grid {
+    position: relative;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    float: none;
+    left: 10%;
+  }
+  .one-project {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .p-description {
+    font-size: 1.2rem;
+  }
+
+  .viewmore {
+    display: none;
+  }
+
+  #project-body {
+    background: #0c7070;
+  }
+
+  .viewmore-md {
+    margin: 30px 0 60px 0;
+  }
+
+  #contact-body {
+    background: #1774aa;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .hero-sub {
+    font-size: 1.2rem;
+  }
+
+  .hero-link {
+    font-size: 1.4rem;
+  }
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  nav a {
+    margin: 0;
+    padding: 0;
+  }
+
+  nav {
+    padding: 10px;
+    right: auto;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .contact-title h3 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  #about-body {
+    background: #011627;
+  }
+
+  .socials {
+    top: 85%;
+  }
+
+  .name-intro h3 {
+    font-size: 8rem;
+  }
 }
 
 @media print,
