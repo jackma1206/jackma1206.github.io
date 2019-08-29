@@ -424,6 +424,7 @@ nav a:hover {
 }
 
 .resume-btn {
+  margin: 20px 0;
   width: 100px;
   padding: 10px;
 }
