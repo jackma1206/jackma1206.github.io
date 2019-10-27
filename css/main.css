@@ -234,6 +234,10 @@ nav a:hover {
     position: relative;
 }
 
+.project-title-md{
+    display: none;
+}
+
 .project-title h2 {
     font-size: 100px;
     letter-spacing: 5px;
